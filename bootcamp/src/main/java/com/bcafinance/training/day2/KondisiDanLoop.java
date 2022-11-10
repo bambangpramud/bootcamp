@@ -1,6 +1,7 @@
 package com.bcafinance.training.day2;
 
 import java.util.Random;
+import java.util.Scanner;
 
 //import java.util.Iterator;
 
@@ -58,11 +59,17 @@ public static void main(String[] args) {
 //	
 	
 	
-	int testes = stringToAscii("Tb@14XzM");
+//	int testes = stringToAscii("Tb@14XzM");
+	
+	Scanner scn = new Scanner(System.in);
+	
+	System.out.print("input String to convert into ASCII Value :   ");
+	int testes = stringToAscii(scn.nextLine());
 	
 	System.out.println(testes);
 	
 	System.out.println(asciiToString());
+	
 	
 	
 }
